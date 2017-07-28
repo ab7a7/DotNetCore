@@ -1,0 +1,17 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Blog] (Table)
+       [dbo].[Post] (Table)
+       [dbo].[FK_Post_Blog_BlogId] (Foreign Key)
+
+** Supporting actions

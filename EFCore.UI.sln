@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore.UI", "EFCore.UI\EFCore.UI.csproj", "{EC9ECB89-8C12-445F-A233-716F5273FC5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{A3CBE59D-B078-447A-A14F-80642112CC2C}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "EFCoreDB", "Database\EFCoreDB\EFCoreDB.sqlproj", "{6A93D6E5-6092-47DF-B3BF-689AD5184A5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore.DataAccess", "EFCore.DataAccess\EFCore.DataAccess.csproj", "{F736E011-D3D5-472B-B4D7-8ED3C4299D45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{4451E8E9-B0D4-4566-A411-3784BC75D991}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCore.Models", "Models\EFCore.Models\EFCore.Models.csproj", "{EB31EC20-12C5-4C47-9F1B-7706FFFC785C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC9ECB89-8C12-445F-A233-716F5273FC5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9ECB89-8C12-445F-A233-716F5273FC5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9ECB89-8C12-445F-A233-716F5273FC5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9ECB89-8C12-445F-A233-716F5273FC5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A93D6E5-6092-47DF-B3BF-689AD5184A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A93D6E5-6092-47DF-B3BF-689AD5184A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A93D6E5-6092-47DF-B3BF-689AD5184A5B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A93D6E5-6092-47DF-B3BF-689AD5184A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A93D6E5-6092-47DF-B3BF-689AD5184A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A93D6E5-6092-47DF-B3BF-689AD5184A5B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F736E011-D3D5-472B-B4D7-8ED3C4299D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F736E011-D3D5-472B-B4D7-8ED3C4299D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F736E011-D3D5-472B-B4D7-8ED3C4299D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F736E011-D3D5-472B-B4D7-8ED3C4299D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB31EC20-12C5-4C47-9F1B-7706FFFC785C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB31EC20-12C5-4C47-9F1B-7706FFFC785C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB31EC20-12C5-4C47-9F1B-7706FFFC785C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB31EC20-12C5-4C47-9F1B-7706FFFC785C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A93D6E5-6092-47DF-B3BF-689AD5184A5B} = {A3CBE59D-B078-447A-A14F-80642112CC2C}
+		{F736E011-D3D5-472B-B4D7-8ED3C4299D45} = {A3CBE59D-B078-447A-A14F-80642112CC2C}
+		{EB31EC20-12C5-4C47-9F1B-7706FFFC785C} = {4451E8E9-B0D4-4566-A411-3784BC75D991}
+	EndGlobalSection
+EndGlobal
