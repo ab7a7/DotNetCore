@@ -1,7 +1,0 @@
-C:\Projects\Learning\EFCore\DotNetCore\Models\EFCore.Models\bin\Debug\netstandard1.4\EFCore.Models.deps.json
-C:\Projects\Learning\EFCore\DotNetCore\Models\EFCore.Models\bin\Debug\netstandard1.4\EFCore.Models.dll
-C:\Projects\Learning\EFCore\DotNetCore\Models\EFCore.Models\bin\Debug\netstandard1.4\EFCore.Models.pdb
-C:\Projects\Learning\EFCore\DotNetCore\Models\EFCore.Models\obj\Debug\netstandard1.4\EFCore.Models.csprojResolveAssemblyReference.cache
-C:\Projects\Learning\EFCore\DotNetCore\Models\EFCore.Models\obj\Debug\netstandard1.4\EFCore.Models.AssemblyInfo.cs
-C:\Projects\Learning\EFCore\DotNetCore\Models\EFCore.Models\obj\Debug\netstandard1.4\EFCore.Models.dll
-C:\Projects\Learning\EFCore\DotNetCore\Models\EFCore.Models\obj\Debug\netstandard1.4\EFCore.Models.pdb

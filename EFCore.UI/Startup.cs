@@ -1,4 +1,4 @@
-﻿using EFCore.DataAccess;
+﻿using EFCore.DataAccess.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -25,7 +25,7 @@ namespace EFCore.UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BloggingContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BloggingDB")));
+            services.AddDbContext<TutorialContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BloggingDB")));
             services.AddScoped<IUnitOfWork, SqlUnitOfWork>();
             // Add framework services.
             services.AddMvc();

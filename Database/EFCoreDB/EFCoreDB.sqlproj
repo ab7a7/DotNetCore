@@ -64,5 +64,14 @@
     <Build Include="Tables\Blog.sql" />
     <Build Include="Tables\Post.sql" />
     <None Include="Initalisation\BlogData.sql" />
+    <Build Include="Tables\Category.sql" />
+    <Build Include="Tables\Gadget.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Initalisation\PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Initalisation\CategoryData.sql" />
+    <None Include="Initalisation\GadgetData.sql" />
   </ItemGroup>
 </Project>
