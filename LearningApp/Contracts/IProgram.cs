@@ -1,4 +1,4 @@
-﻿namespace LearningApp
+﻿namespace LearningApp.Contracts
 {
     interface IProgram
     {

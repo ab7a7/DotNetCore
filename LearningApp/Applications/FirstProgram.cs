@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LearningApp.Contracts;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -32,9 +33,23 @@ namespace LearningApp
             Console.WriteLine($"Time Taken with FirstOrDefault: {watch.Elapsed}");
 
             watch.Restart();
-            var newItem = items.Find(p => p.Name == "Naz");
+            var newItem = items.Find(p => p.Name == "Steven");
             watch.Stop();
             Console.WriteLine($"Time Taken with Find: {watch.Elapsed}");
+
+            Func<Person, bool> getPerson = (Person x) => x.Name == "Steven";
+
+            watch.Restart();
+            foreach(var p in items)
+            {
+                if(getPerson(p))
+                {
+                    break;
+                }
+            }
+
+            watch.Stop();
+            Console.WriteLine($"Time Taken with ForEach: {watch.Elapsed}");
         }
 
         private void ChangeArrayFirstIndex()
