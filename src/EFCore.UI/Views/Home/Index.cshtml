@@ -106,3 +106,8 @@
         </ul>
     </div>
 </div>
+
+@if(await AuthorizationService.AuthorizeAsync(User, "PolicyName"))
+{
+    <p>This paragraph is displayed because you fulfilled PolicyName.</p>
+}

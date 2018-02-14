@@ -1,6 +1,8 @@
 ﻿using EFCore.DataAccess.Infrastructure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,11 +26,14 @@ namespace EFCore.UI
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        { 
             services.AddDbContext<TutorialContext>(options => options.UseSqlServer(Configuration.GetConnectionString("BloggingDB")));
             services.AddScoped<IUnitOfWork, SqlUnitOfWork>();
             // Add framework services.
-            services.AddMvc();
+            services.AddMvc(config => {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +51,6 @@ namespace EFCore.UI
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
             app.UseStaticFiles();
 
             app.UseMvc(routes =>

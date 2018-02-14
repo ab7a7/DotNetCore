@@ -1,6 +1,5 @@
-﻿using EFCore.DataAccess.Contracts;
-using EFCore.Models.Entities;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
+using EFCore.DataAccess.Contracts;
 
 namespace EFCore.DataAccess.Infrastructure
 {

@@ -1,5 +1,4 @@
-﻿using System;
-using EFCore.DataAccess.Configurations.Extensions;
+﻿using EFCore.DataAccess.Configurations.Extensions;
 using EFCore.Models.Entities;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

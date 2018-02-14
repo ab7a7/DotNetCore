@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using EFCore.DataAccess.Infrastructure;
 using EFCore.Models.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EFCore.UI.Controllers
 {
+    [Authorize]
     public class BlogsController : Controller
     {
         private readonly IUnitOfWork uow;
