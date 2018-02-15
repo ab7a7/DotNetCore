@@ -15,8 +15,8 @@ namespace LearningApp
             var methods = Assembly.GetEntryAssembly()
                             .DefinedTypes
                             .Where(t => t.ImplementedInterfaces.Contains(typeof(IProgram)) && t.IsClass)
-                            .Where(t => t.GetConstructors().Where(c => c.IsPublic && c.GetParameters().Length == 0).Count() > 0)
-                            .OrderBy(t => GetDescription(t))
+                            .Where(t => t.GetConstructors().Any(c => c.IsPublic && c.GetParameters().Length == 0))
+                            .OrderBy(GetDescription)
                             .Zip(Keys, (ep, k) => new { Key = k, EntryPoint = ep })
                             .ToList();
             if(methods.Count == 0)

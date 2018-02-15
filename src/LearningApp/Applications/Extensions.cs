@@ -1,5 +1,6 @@
 ﻿using LearningApp.Contracts;
 using System;
+using System.Threading;
 
 namespace LearningApp
 {
@@ -9,14 +10,13 @@ namespace LearningApp
         {
             StringExtensions();
         }
-
         private void StringExtensions()
         {
             Console.WriteLine("hello".Capitalize());
             Console.WriteLine("Hi".IsCapitalized());
             Console.WriteLine("hEllo".IsCapitalized());
         }
-    }
+   }
 
     internal static class StringExtensions
     {
